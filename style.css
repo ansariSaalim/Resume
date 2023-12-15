@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#header{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 10px;
+    /* background-color: blueviolet; */
+}
+#header>h1{
+    align-self: center;
+    padding: 20px 0;
+    /* background-color: yellow; */
+}
+#header>h2{
+    margin: 10px 0;
+}
+.head{
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+ul>li{
+    font-size: 18px;
+    list-style: none;
+    margin: 0 50px;
+}
+hr{
+    background-color: black;
+    border: 1px solid black;
+    height: 1px;
+    margin: 20px 0;
+}
+ul>li>a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Skills */
+#skills{
+    display: flex;
+    flex-direction: column;
+}
+#skills>.head2{
+    align-self: center;
+    font-size: 20px;
+}
+
+.stack>p, .stack>ul>li{
+    margin: 10px 0;
+    font-size: 100%;
+    align-self: center;
+    justify-self: center;
+}
+
+#skills1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.stack {
+    flex: 2;
+    min-width: 200px; /* Adjust the minimum width as needed */
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 20px;
+    transition: all .5s;
+  }
+  
+  .stack:hover{
+    box-shadow: 1px 1px 8px 2px black;
+    background-color: blueviolet;
+    color: white;
+  }
+  @media screen and (max-width: 768px) {
+    .stack {
+      flex-basis: calc(50% - 20px);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .stack {
+      flex-basis: calc(100% - 20px);
+    }
+  }
+  
